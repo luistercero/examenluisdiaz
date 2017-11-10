@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+        <form name="Ingresar"  method="post">
+        numero1 <input type="text" name="n1"><br>
+        <br>
+        numero2<input type="text" name="n2"><br>
+        <br>
+        <input type="submit" value="calcular">
+        </form>
+
+        <div >
+          <ul>
+            {{#each calculo}}
+          <li>
+
+                {{num1}} + {{num2}} = {{calculo}}
+          </li>
+          {{/each}}
+</ul>
+        </div>
+
+  </body>
+</html>
